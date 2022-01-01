@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+int getMax(int num1, int num2){
+    int result;
+    if(num1>num2){
+        result=num1;
+    }
+    else result=num2;
+    return result;
+}
+int main(){
+     /*bool isMale=true;
+     bool isTall=true;
+     if(isMale && isTall){
+         cout<<"Great, you are a tall man"<<endl;
+     }
+     else{
+         cout<<"Not so great"<<endl;
+     }*/
+     cout<<getMax(5,3)<<endl;
+     return 0;
+}

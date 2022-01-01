@@ -1,0 +1,21 @@
+
+#include <iostream>
+using namespace std;
+void hello(){
+    cout<<"Hello guys!!"<<endl;
+    cout<<"This is a void function, it doesnt return anything"<<endl;
+}
+int addition(int a, int b){
+    
+    cout<<"This function has a return value"<<endl;
+    return a+b;
+}
+int main(){
+    hello();
+    int a=5;
+    int b=3;
+    //addition(a,b);
+    int added=addition(a,b);
+    cout<<"The addition of "<<a <<" and " <<b<< " gives us " <<added<<endl;
+    return 0;
+}

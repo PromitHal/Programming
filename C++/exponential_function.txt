@@ -1,0 +1,47 @@
+#include <iostream>
+using namespace std;
+//factorial function
+double factorial(int n){
+  int result=n;
+  int fact=1;
+  int temp=0;
+  if (n==0){
+      result=1;
+  }
+  else{
+      while(temp<n){
+         fact=fact*(n-temp);
+         temp++;
+      }
+  }
+  return fact;
+}
+
+//power function
+double power(double x, int y){
+    int result=1;
+    while(y){
+       result=result*x;
+       y--;
+    }
+    return result;
+}
+
+//Exponential function
+double exponential(double x){
+    int c=1;
+    int n=30;
+    double expo=1;
+    for (int i=1;i<=n;i++){
+        expo+=power(x,i)/factorial(i);
+    }
+    return expo;
+}
+
+int main(){
+     double expo=exponential(1);
+     cout<<"The exponential of unity is "<<expo<<endl;
+    
+    
+    
+}
