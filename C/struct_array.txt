@@ -1,0 +1,45 @@
+//Stacks 
+#include <stdio.h>
+#include <stdlib.h>
+struct product{
+	char name[40];
+    float rating;
+	float price;//in Dollars
+};
+int main(){
+    struct product fruit_juice[4]={
+    	{
+    		"Banana Shake",
+    		4.3,
+    		1
+		},
+		{
+			"Lemonade",
+			4.5,
+			2
+		},
+		{
+			"Mango Shake",
+			4.7,
+			1.7	
+		},
+		{
+			"Strawberry Juice",
+			5.0,
+			3
+		}
+	};
+	struct product cricket_bat[2]{
+		{
+			"MRF",
+			4.2,
+			250
+		},
+		{
+			"Sunridges",
+			4.4,
+			300
+		}
+	};
+	return 0;
+}
